@@ -1,0 +1,37 @@
+*{margin: 0; padding: 0;}
+ul{
+    list-style:none;
+    padding-left: 0px;
+}
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+p{
+    margin: 25px 0;
+}
+h2{
+    margin: 20px 0;
+}
+.title{
+    float: left;
+    width: 20%;
+    background-color: cornflowerblue;
+    line-height: 30px;
+    height: 851px;
+}
+.title h1{
+    text-align: center;
+    margin-top: 90px;
+    font-size: 50px;
+    color:white;
+}
+.content{
+    margin-top: 30px;
+    float: right;
+    width: 78%;
+    height: 821px;
+}
+.title_2 p b {
+    display: block;
+}
