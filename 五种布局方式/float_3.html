@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float_3</title>
+    <style type="text/css">
+/*      *****Float方法*****
+        html,body {
+            margin: 0;
+            height: 100%;
+        }
+        .left{
+            height: 100%;
+            background-color: green;
+        }
+        .right{
+            width: 300px;
+            float: right;
+            background-color: red;
+            height: 100%;
+        }
+*/
+/*       *****Position方法*****
+        html,body {
+            margin: 0;
+            height: 100%;
+        }
+        .right {
+            position: fixed;
+            width: 500px;
+            height: 100%;
+            background-color: red;
+            right: 0;
+        }
+        .left {
+            height: 100%;
+            background-color: yellow;
+        }
+        */
+        html,body {
+            margin: 0;
+            height: 100%;
+        }
+        .all {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            height: 100%;
+        }
+        .left {
+            height: 100%;
+            order: 0;
+            background-color: red;
+            flex: 1;
+        }
+        .right {
+            height: 100%;
+            order: 1;
+            background-color: yellow;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="right"></div>
+        <div class="left"></div>
+    </div>
+</body>
+</html>

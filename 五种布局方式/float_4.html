@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float_4</title>
+    <style type="text/css">
+/*      *****Float方法*****
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        .middle {
+            height: 100%;
+            background-color: blue;
+        }
+        .left,.right {
+            height: 100%;
+            width: 200px;
+            background-color: red;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+*/
+/*       *****Position方法*****
+        html,body {
+            margin: 0;
+            height: 100%;
+        }
+        .left,.right {
+            height: 100%;
+            width: 300px;
+            position: fixed;
+            top: 0;
+            background-color: red;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            right: 0;
+        }
+        .middle {
+            background-color: yellow;
+            height: 100%;
+        }*/
+        html,body {
+            margin: 0;
+            height: 100%;
+        }
+        .all {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+        .left,.right {
+            height: 100%;
+            background: red;
+            width: 200px;
+        }
+        .middle {
+            height: 100%;
+            background-color: yellow;
+            flex: 1;
+            order: 0;
+        }
+        .left {
+            order: -1;
+        }
+        .right {
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <dav class="all">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="middle"></div>
+    </dav>
+</body>
+</html>
