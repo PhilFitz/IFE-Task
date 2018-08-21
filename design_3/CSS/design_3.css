@@ -1,0 +1,685 @@
+html,body {
+    margin: 0;
+    width: 100%;
+}
+.all {
+    border: 1px solid #aaa;
+    width: 1590px;
+    height: 1020px;
+}
+.menu {
+    border: 1px solid #aaa;
+    width: 350px;
+    height: 100%;
+    float: left;
+}
+.primary {
+    background-color: #1d2531;
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+.item1 {
+    border: #1d2531 1px solid;
+    border-radius: 50%;
+    background-color: #2399f1;
+    width: 60px;
+    height: 60px;
+    margin: 20px auto 0 auto;
+}
+.item2 {
+    border: #1d2531 1px solid;
+    border-radius: 50%;
+    background-color: #9079E4;
+    width: 60px;
+    height: 60px;
+    margin: 20px auto 0 auto;
+}
+.item3 {
+    border: #1d2531 1px solid;
+    border-radius: 50%;
+    background-color: #f15135;
+    width: 60px;
+    height: 60px;
+    margin: 20px auto 0 auto;
+}
+.item4 {
+    border: #b7c0cd 1px solid;
+    border-radius: 50%;
+    background-color: #1d2531;
+    width: 60px;
+    height: 60px;
+    margin: 20px auto 0 auto;
+}
+.primary a {
+    text-align: center;
+    line-height: 70px;
+}
+.bottom-act {
+    text-align: center;
+    margin-top: 630px;
+}
+.sec {
+    background-color: #222c3c;
+    width: 250px;
+    height: 100%;
+    float: right;
+}
+.part1 {
+    /*background-color: yellow;*/
+    border-bottom: 1px solid #fff;
+    height: 225px;
+    width: 191px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 12px;
+    color: #fff;
+}
+p {
+    margin: 0;
+}
+.part1 th {
+    width: 140px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.part1 tr {
+    line-height: 30px;
+    text-align: center;
+}
+.part1 .pic {
+    border-radius: 15px;
+    padding-left: 10px;
+    background-color: #2399f1;
+    font-size: 14px;
+    width: 32px;
+    height: 27px;
+}
+.part1 img {
+    padding-left: 10px;
+}
+.part2 {
+    /*background-color: yellow;*/
+    width: 191px;
+    height: 195px;
+    margin-top: 24px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+.part2 th {
+    /*width: 180px;*/
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    /*border: red 1px solid;*/
+    /*border: 0;*/
+}
+.part2 tr {
+    line-height: 33px;
+    text-align: center;
+}
+.yp {
+    float: right;
+    margin-right: 17px;
+}
+.part3 {
+    /*background-color: yellow;*/
+    width: 191px;
+    height: 201px;
+    margin-top: 22px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+.part3 table {
+    width: 191px;
+    height: 201px;
+}
+.th_1 {
+    text-align: left;
+}
+.part3 .act_1 {
+    width: 30px;
+}
+#act_12 {
+    border-radius: 45%;
+    background-color: #2399f1;
+}
+.part3 .act_2_2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f15135;
+
+}
+.part4 {
+    /*background-color: yellow;*/
+    height: 31px;
+    width: 191px;
+    margin-top: 271px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #fff;
+    border-bottom: 3px #fff;
+}
+.text {
+    height: 26px;
+    width: 191px;
+}
+.mg {
+    float: left;
+}
+.dollor {
+    float: right;
+}
+.lines {
+    width: 191px;
+    height: 4px;
+    background-color: #fff;
+    display: flex;
+}
+.have-color {
+    float: left;
+    width: 70px;
+    background-color: #9079E4;
+    order: 0;
+}
+.no-color {
+    float: right;
+    width: 121px;
+    background-color: #fff;
+    order: 1;
+}
+
+.chat {
+    width: 1230px;
+    height: 100%;
+    float: right;
+    border: 1px solid #aaa;
+}
+.profile {
+    /*background-color: orange;*/
+    border-bottom: 2px solid #888;
+    height: 81px;
+    width: 100%;
+    position: relative;
+}
+.massage {
+    width: 104px;
+    height: 19px;
+    position: absolute;
+    top: 31px;
+    left: 31px;
+    font-size: 24px;
+}
+.photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 14px;
+    left: 1000px;
+}
+.photo_2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+.photo_2 img {
+    margin-left: 3px;
+}
+.name span {
+    color: #2399f1;
+}
+.name {
+    width: 85px;
+    height: 50px;
+    position: absolute;
+    top: 14px;
+    right: 81px;
+}
+.other {
+    width: 11px;
+    height: 7px;
+    position: absolute;
+    top: 30px;
+    right: 31px;
+}
+
+
+.chats {
+    height: 939px;
+    width: 100%;
+}
+.list-chat {
+    /*border: 1px solid #aaa;*/
+    float: left;
+    width: 402px;
+    height: 939px; /*高度待定*/
+}
+.search {
+    width: 400px;
+    height: 70px;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+}
+.search button {
+    position: absolute;
+    top: 16px;
+    right: 34px;
+    background-color: rgba(255,255,255,1);
+    margin-top: 2px;
+    padding: 0;
+    border: none;
+    float: right;
+}
+.srch {
+    height: 38px;
+    width: 340px;
+    margin: 15px auto 15px 30px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+.chat1 {
+    width: 400px;
+    height: 130px;
+    border-bottom: 1px solid #aaa;
+}
+.chat2 {
+    width: 400px;
+    height: 130px;
+    border-bottom: 1px solid #aaa;
+}
+.mark {
+    float: left;
+    height: 131px;
+    width: 2px;
+    background-color: #2399f1;
+}
+.con {
+    width: 348px;
+    height: 90px;
+}
+.avatar {
+    width: 100%;
+    height: 46px;
+    margin-left: 27px;
+    margin-top: 15px;
+}
+.avatar .img {
+    width: 50px;
+    height: 46px;
+    float: left;
+}
+.introduce {
+    float: left;
+    width: 120px;
+    height: 100%;
+    margin-left: 27px;
+}
+.introduce .point {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #2399f1;
+    float: left;
+    margin-top: 5px;
+}
+.B-B b{
+    color: #2399f1;
+}
+.Twitter {
+    color: #aaa;
+}
+.distance {
+    float: right;
+    height: 100%;
+    width: 46px;
+    color: #aaa;
+}
+.notification {
+    width: 100%;
+    height: 29px;
+    margin-top: 15px;
+    margin-left: 27px;
+    font-size: 12px;
+    color: #aaa;
+}
+.notification read {
+    float: left;
+}
+.notification .unread {
+    float: right;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    background-color: #2399f1;
+    text-align: center;
+    color: #fff;
+}
+.unread p {
+    margin-top: 6px;
+}
+.chat3 {
+    width: 400px;
+    height: 130px;
+    border-bottom: 1px solid #aaa;
+}
+.avatar .img {
+    width: 50px;
+    height: 46px;
+    float: left;
+}
+.introduce {
+    float: left;
+    width: 150px;
+    height: 100%;
+    margin-left: 27px;
+}
+.introduce .point {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #2399f1;
+    float: left;
+    margin-top: 5px;
+}
+.Job {
+    color: #aaa;
+}
+.distance {
+    float: right;
+    height: 100%;
+    width: 60px;
+    color: #aaa;
+}
+.notification {
+    width: 100%;
+    height: 29px;
+    margin-top: 15px;
+    margin-left: 27px;
+    font-size: 12px;
+    color: #aaa;
+}
+.chat4 {
+    width: 400px;
+    height: 130px;
+    border-bottom: 1px solid #aaa;
+}
+.chat5 {
+    width: 400px;
+    height: 130px;
+    border-bottom: 1px solid #aaa;
+}
+.chat6 {
+    width: 400px;
+    height: 120px;
+    border-bottom: 1px solid #aaa;
+}
+.chat7 {
+    width: 400px;
+    /*height: 131px;*/
+}
+.open-chat {
+    border-left: 1px solid #aaa;
+    float: right;
+    width: 825px;
+    height: 939px;
+    position: relative;
+}
+.tuesday {
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    left: 373px;
+    top: 400px;
+    background-color: #fff;
+    text-align: center;
+}
+.new_messages {
+    width: 150px;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 373px;
+    top: 780px;
+    color: #2399f1;
+}
+.chat-title {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+}
+.profile-name {
+    float: left;
+    width: 120px;
+    height: 100%;
+    margin-left: 27px;
+}
+.profile-name .point {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #1BB934;
+    float: left;
+    margin-top: 8%;
+}
+.profile-name .B_B {
+    float: left;
+    line-height: 70px;
+}
+.tools {
+    float: left;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 110px;
+    height: 34px;
+    margin-top: 16px;
+    margin-left: 370px;
+}
+.trash {
+    float: left;
+    width: 35px;
+    height: 34px;
+    border-right: 1px solid #aaa;
+}
+.user {
+    float: left;
+    width: 35px;
+    height: 34px;
+    border-right: 1px solid #aaa;
+}
+.chats-of {
+    float: left;
+    width: 140px;
+    height: 34px;
+    margin-left: 45px;
+    margin-top: 16px;
+}
+.page {
+    float: left;
+    line-height: 35px;
+}
+.direction {
+    float: right;
+    width: 71px;
+    height: 34px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.left {
+    float: left;
+    width: 35px;
+    height: 34px;
+    border-right: 1px solid #aaa;
+}
+.massageTop {
+    width: 100%;
+    height: 309px;
+    border-bottom: 1px solid #aaa;
+    font-size: 14px;
+}
+.massage1 {
+    width: 780px;
+    height: 102px;
+    margin-left: 25px;
+    margin-top: 30px;
+
+}
+.massageTop .BB_photo {
+    width: 70px;
+    height: 100%;
+    float: left;
+}
+.massageTop .BB_talk {
+    width: 700px;
+    height: 100%;
+    float: left;
+}
+.massage2 {
+    width: 780px;
+    height: 170px;
+    margin-top: 12px;
+    margin-left: 25px;
+}
+.massageTop .JJ_photo {
+    width: 70px;
+    height: 100%;
+    float: left;
+}
+.massageTop .JJ_talk {
+    width: 700px;
+    height: 100%;
+    float: left;
+}
+.massageMiddle {
+    width: 100%;
+    height: 350px;
+    border-bottom: 1px solid #2399f1;
+    font-size: 14px;
+}
+.massage3 {
+    width: 780px;
+    height: 70px;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+.massageMiddle .BB_photo {
+    width: 70px;
+    height: 100%;
+    float: left;
+}
+.massageMiddle .BB_talk {
+    width: 700px;
+    height: 100%;
+    float: left;
+}
+.massage4 {
+    width: 780px;
+    height: 260px;
+    margin-top: 12px;
+    margin-left: 25px;
+    position: relative;
+}
+.massageMiddle .JJ_photo {
+    width: 70px;
+    height: 100%;
+    float: left;
+}
+.massageMiddle .JJ_talk {
+    width: 700px;
+    height: 100%;
+    float: left;
+}
+.pic_1 {
+    z-index: 0;
+    position:  absolute;
+    left: 70px;
+    bottom: 20px;
+    opacity: 0.2%;
+}
+.pic_1_1 {
+    display: none;
+}
+.pic_1:hover .pic_1_1 {
+    /*background-image: url(../images/(29).png);*/
+    /*background-color: red;*/
+    display: block;
+    opacity:.7;
+    filter:alpha(opacity=70);
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    width: 157px;
+    height: 100px;
+}
+.pic_2:hover .pic_1_1 {
+    /*background-image: url(../images/(29).png);*/
+    /*background-color: red;*/
+    display: block;
+    opacity:.7;
+    filter:alpha(opacity=70);
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    width: 157px;
+    height: 100px;
+}
+.pic_2 {
+    z-index: 0;
+    position:  absolute;
+    left: 250px;
+    bottom: 20px;
+    opacity: 0.2%;
+}
+.massageBottom {
+    width: 100%;
+    height: 186px;
+    font-size: 14px;
+}
+.massage5 {
+    width: 780px;
+    height: 60px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.massageBottom .BB_photo {
+    width: 70px;
+    height: 100%;
+    float: left;
+}
+.massageBottom .BB_talk {
+    width: 700px;
+    height: 100%;
+    float: left;
+}
+.button-input {
+    width: 780px;
+    height: 54px;
+}
+.massageBottom button {
+    border: 1px solid #aaa;
+    float: left;
+    margin: 0;
+    padding: 0;
+    /*border: 0;*/
+}
+.massageBottom input {
+    float: left;
+    width: 717px;
+    height: 51px;
+}
