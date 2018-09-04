@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+          var oTxt = document.getElementById("name");
+          var oBtn = document.getElementById("submit-btn");
+
+          oBtn.onclick = function ret ()
+          {
+            console.log(oTxt.value);
+          };
+          document.onkeydown = function ()
+          {
+              if(event.keyCode === 13)
+              {
+                  console.log(oTxt.value);
+              }
+              if(event.keyCode === 27)
+              {
+                  oTxt.value = '';
+              }
+          };
+        };
+    </script>
+</head>
+<body>
+    <input id="name" type="text" value="">
+    <button id="submit-btn">Submit</button>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 {
+            width: 480px;
+            height: 480px;
+            margin: 100px auto;
+            background-image: url(erik_ce204002.jpg);
+            background-position: 0,0;
+        }
+    </style>
+    <script>
+        window.onload = function ()
+        {
+          var oDiv = document.getElementById("div1");
+
+          var moveHeight = 480;
+          var times = 16;
+          var nowPic = 0;
+          var turnUp = true;
+
+          function pic() {
+
+              if (nowPic >= times) {
+                  nowPic = times;
+                  turnUp = false;
+              }
+
+              if(nowPic <= 0) {
+                  nowPic = 0;
+                  turnUp = true;
+              }
+
+              if(turnUp)
+              {
+                  nowPic ++;
+              }
+              else {
+                  nowPic --;
+              }
+
+          }
+          setInterval(function () {
+              oDiv.style.backgroundPositionY = -nowPic * moveHeight + 'px';
+              pic();
+          }, 90);
+        };
+    </script>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

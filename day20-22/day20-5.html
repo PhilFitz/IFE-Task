@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            var oVid = document.getElementById("fade-obj");
+            var oBtn = document.getElementById("fade-btn");
+
+            oBtn.onclick = function ()
+            {
+                if (oBtn.innerHTML === "淡入") showin(oVid);
+                else(showout(oVid));
+            };
+
+            function showout (obj)
+            {
+                var num = 10;
+                var st = setInterval(function()
+                {
+                    num --;
+                    obj.style.opacity = num / 10;
+                    oBtn.disabled = true;
+                    if(num <= 0)
+                    {
+                        oBtn.innerHTML = '淡入';
+                        oBtn.disabled = false;
+                        clearInterval(st);
+                    }
+                }, 30);
+            }
+            function showin(obj) {
+                var num = 0;
+
+                var tm = setInterval(function () {
+                    num ++;
+                    obj.style.opacity = num / 10;
+                    oBtn.setAttribute("disabled", true);
+                    if (num >= 10)
+                    {
+                        oBtn.innerHTML = '淡出';
+                        oBtn.removeAttribute("disabled");
+                        clearInterval(tm);
+                    }
+                },30);
+            }
+        };
+
+    </script>
+</head>
+
+<body>
+    <div id="fade-obj" style="width:300px;height:300px;background:#000"></div>
+    <button id="fade-btn">淡出</button>
+</body>
+</html>
