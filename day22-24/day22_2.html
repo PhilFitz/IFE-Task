@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        button {
+            display: block;
+            margin-top: 15px;
+        }
+    </style>
+    <script>
+        window.onload = function ()
+        {
+            let radioA = document.getElementById("radio-a");
+            let atrA = document.getElementById("str-a");
+            let radioB = document.getElementById("radio-b");
+            let atrB = document.getElementById("str-b");
+            let numA = document.getElementById("num-a");
+            let numB = document.getElementById("num-b");
+            let btns = document.getElementsByTagName("button");
+            let re = document.getElementById("result");
+
+            for (let i = 0; i < btns.length; i++)
+            {
+                let btn = btns[i];
+                let j;
+                (
+                    function (j)
+                    {
+                        btn.onclick = function ()
+                        {
+                            secondGame(j);
+                        }
+                    }
+                )(i);
+            }
+            
+            
+            function secondGame(btnNum)
+            {
+                switch(btnNum)
+                {
+                    case 0:
+                    {
+                        if (radioA.checked)
+                        {
+                            re.innerHTML = atrA.value.length;
+                        }
+                        if (radioB.checked)
+                        {
+                            re.innerHTML = atrB.value.length;
+                        }
+                        break;
+                    }
+                    case 1:
+                    {
+                        if (radioA.checked)
+                        {
+                            re.innerHTML = atrA.value[2];
+                        }
+                        if (radioB.checked)
+                        {
+                            re.innerHTML = atrB.value[2];
+                        }
+                        break;
+                    }
+                    case 2:
+                    {
+                        re.innerHTML = atrA.value.concat(atrB.value);
+                        break;
+                    }
+                    case 3:
+                    {
+                        if (atrA.value !== '')
+                        {
+                            if (atrB.value !== '')
+                            {
+                                re.innerHTML = atrB.value + "在"+ atrA.value + "中第一次出现在第" + (atrA.value.indexOf(atrB.value) + 1) + "个字符";
+                            }
+                            else
+                            {
+                                re.innerHTML = "B中内容不能为空"
+                            }
+                        }
+                        else
+                        {
+                            re.innerHTML = "A中内容不能为空"
+                        }
+                        break;
+                    }
+                    case 4:
+                    {
+                        if (atrA.value !== '')
+                        {
+                            if (atrB.value !== '')
+                            {
+                                re.innerHTML = atrA.value + "在"+ atrB.value + "中最后一次出现在第" + (atrB.value.lastIndexOf(atrA.value) + 1) + "个字符";
+                            }
+                            else
+                            {
+                                re.innerHTML = "B中内容不能为空"
+                            }
+                        }
+                        else
+                        {
+                            re.innerHTML = "A中内容不能为空"
+                        }
+                        break;
+                    }
+                    case 5:
+                    {
+                        if (radioA.checked)
+                        {
+                            if (atrA.value !== '')
+                            {
+                                let n1 = parseInt(numA.value);
+                                let n2 = parseInt(numB.value);
+                                let newStr = atrA.value.slice(n1, n2);
+                                re.innerHTML = newStr;
+                            }
+                            else
+                            {
+                                re.innerHTML = "A中内容不能为空"
+                            }
+                        }
+                        if (radioB.checked)
+                        {
+                            if (atrB.value !== '')
+                            {
+                                let n1 = parseInt(numA.value);
+                                let n2 = parseInt(numB.value);
+                                let newStr = atrB.value.slice(n1, n2);
+                                re.innerHTML = newStr;
+                            }
+                            else
+                            {
+                                re.innerHTML = "B中内容不能为空"
+                            }
+                        }
+                        break;
+                    }
+                    case 6:
+                    {
+                        if (radioA.checked)
+                        {null}
+                        if (radioB.checked)
+                        {null}
+                        break;
+                    }
+                    case 7:
+                    {
+                        if (radioA.checked)
+                        {
+                            if (atrA.value !== '')
+                            {
+                                let n1 = parseInt(numA.value);
+                                let n2 = parseInt(numB.value);
+                                let newStr = atrA.value.substr(n1, n2);
+                                re.innerHTML = newStr;
+                            }
+                            else
+                            {
+                                re.innerHTML = "A中内容不能为空"
+                            }
+                        }
+                        if (radioB.checked)
+                        {
+                            if (atrB.value !== '')
+                            {
+                                let n1 = parseInt(numA.value);
+                                let n2 = parseInt(numB.value);
+                                let newStr = atrB.value.substr(n1, n2);
+                                re.innerHTML = newStr;
+                            }
+                        }
+                        break;
+                    }
+                    case 8:
+                    {
+                        if (radioA.checked)
+                        {
+                            re.innerHTML = atrA.value.toUpperCase();
+                        }
+                        if (radioB.checked)
+                        {
+                            re.innerHTML = atrB.value.toUpperCase();
+                        }
+                        break;
+                    }
+                    case 9:
+                    {
+                        if (radioA.checked)
+                        {
+                            re.innerHTML = atrA.value.toLowerCase();
+                        }
+                        if (radioB.checked)
+                        {
+                            re.innerHTML = atrB.value.toLowerCase();
+                        }
+                        break;
+                    }
+                    case 10:
+                    {
+                       if (radioA.checked)
+                        {
+                             re.innerHTML = atrA.value.split(" ").join("");
+                        }
+                        if (radioB.checked)
+                        {
+                            re.innerHTML = atrB.value.split(" ").join("");
+                        }
+                        break;
+                    }
+                    case 11:
+                    {
+                        if (radioA.checked)
+                        {
+                            re.innerHTML = atrA.value.replace(/a/g, atrB.value)
+                        }
+                        if (radioB.checked)
+                        {
+                            re.innerHTML = atrB.value.replace(/a/g, atrA.value)
+                        }
+                        break;
+                    }
+
+
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label>String A:
+            <input id="radio-a" type="radio" checked="true" name="str-obj" value="a">
+        </label>
+        <textarea id="str-a"></textarea>
+        <label>String B:
+            <input id="radio-b" type="radio" name="str-obj" value="b">
+        </label>
+        <textarea id="str-b"></textarea>
+        <label>Num A：<input id="num-a" type="number" value="0"></label>
+        <label>Num B：<input id="num-b" type="number" value="1"></label>
+    </div>
+    <div>
+        <button>获取当前选中输入的内容长度</button>
+        <button>当前选中输入中的第3个字符</button>
+        <button>把两个输入框的文字连接在一起输出（concat）</button>
+        <button>输入B中的内容，在输入A的内容中第一次出现的位置（indexOf）</button>
+        <button>输入A中的内容，在输入B的内容中最后一次出现的位置（lastIndexOf）</button>
+        <button>使用slice获取选中输入框内容的部分内容，参数为num-a及num-b</button>
+        <button>当前选中输入框的行数</button>
+        <button>使用substr获取选中输入框内容的子字符串，参数为num-a及num-b</button>
+        <button>把所选输入框中的内容全部转为大写</button>
+        <button>把所选输入框中的内容全部转为小写</button>
+        <button>把所选输入框中内容的半角空格全部去除</button>
+        <button>把所选输入框中内容的a全部替换成另外一个输入框中的内容</button>
+    </div>
+    <p id="result"></p>
+</body>
+</html>

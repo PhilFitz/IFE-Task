@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var scoreObject = {
+            "Tony": {
+                "Math": 95,
+                "English": 79,
+                "Music": 68
+            },
+            "Simon": {
+                "Math": 100,
+                "English": 95,
+                "Music": 98
+            },
+            "Annie": {
+                "Math": 54,
+                "English": 65,
+                "Music": 88
+            }
+        };
+        var x = [];
+        var y = [];
+        for (i in scoreObject)
+        {
+            x.push(i);
+            for (j in scoreObject[i])
+            {
+                x.push(scoreObject[i][j]);
+            }
+            y.push(x);
+            x = [];
+        }
+        console.log(y);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

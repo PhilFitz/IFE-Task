@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let arr1 = [43, 54, 4, -4, 84, 100, 58, 27, 140];
+        let arr2 = ['apple', 'dog', 'cat', 'car', 'zoo', 'orange', 'airplane'];
+        let arr3 = [[10, 14], [16, 60], [7, 44], [26, 35], [22, 63]];
+        let arr4 = [
+            {
+                id: 1,
+                name: 'candy',
+                value: 40
+            }, {
+                id: 2,
+                name: 'Simon',
+                value: 50
+            }, {
+                id: 3,
+                name: 'Tony',
+                value: 45
+            }, {
+                id: 4,
+                name: 'Annie',
+                value: 60
+            }
+        ];
+
+        arr1.sort(function (a, b) {
+            return a - b;
+        });
+        console.log("由大到小排列：" + arr1);
+
+        arr1.sort(function (a, b) {
+            return b - a;
+        });
+        console.log("由小到大排列：" + arr1);
+
+
+        arr2.sort(function(a, b)
+        {
+            if (a > b)
+            {
+                return 1;
+            }
+            if (a < b)
+            {
+                return -1;
+            }
+            return 0;
+        });
+        console.log("a-z 排序：" + arr2);
+
+        arr2.sort(function(b, a)
+        {
+            if (a > b)
+            {
+                return 1;
+            }
+            if (a < b)
+            {
+                return -1;
+            }
+            return 0;
+        });
+        console.log("z-a 排序：" + arr2);
+
+        arr3.sort(function (a, b) {
+                return a[1] - b[1];
+        });
+        console.log("从大到小：" + "[[" + arr3.join("][") + "]]");
+
+        arr4.sort(function (a, b) {
+            return (a.value - b.value);
+        });
+        console.log(arr4);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
